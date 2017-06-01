@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>App Mobile design</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> 
+</head>
+<body>
+	<style>
+		body{
+			font:16px 'Open Sans',sans-serif;
+			margin: 0;
+			background: #EFEFEF;
+		}
+		h1,h2,h3,p{
+			font-weight:300;
+			text-align: center;
+			margin:0;
+		}
+		h1{
+			margin-top:10px;
+		}
+		a{
+			text-decoration: none;
+	}
+	*{
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.container{
+		display: none;
+		width: 365px;
+		height: 792px;
+		margin:30px auto 0;
+		
+		background: #fff;
+		background: url(images/phone-case.png)no-repeat center 5px scroll;
+		background-size: cover;
+		border: solid 1px transparent;
+		padding: 10px;
+	}
+	.inner-box-phone{
+		margin:100px auto 0;
+		height: 568px;
+		background: #fff;
+		padding:5px;
+
+	}
+	#action{
+		width: 200px;
+		display: block;
+		line-height: 35px;
+		border:0;
+		border-radius: 4px;
+		background: #3498db;
+		color:#fff;
+		text-align: center;
+		margin:10px auto;
+	}
+	.container  ul{
+		padding: 0;
+		margin:0;
+		list-style: none;
+		line-height: 45px;
+		background: #EFEFEF;
+		border:solid 1px transparent;
+		box-shadow: 0 0 3px rgba(0,0,0,0.1);
+	}
+	.container li{
+		text-align: left;
+		margin-bottom:1px;
+		background: #fff;
+		list-style: none;
+		cursor:pointer;
+		padding-left:20px;
+		-webkit-transition-duration: 0.8s;
+		-o-transition-duration: 0.8s;
+		transition-duration: 0.8s;
+	}
+	.container li:hover{
+		background: #fafafa;
+
+	}
+	.inner-box-phone>h2{
+		line-height: 45px;
+		margin-bottom: 3px;
+		background: #11C1F3;
+		color: #fff;
+	}
+	.inner-box-phone h2::before{
+		content:'\f1eb';
+		font-family: 'fontAwesome';
+		margin-right: 10px;
+		color: #fff;
+		font-size: 1.2rem;
+	}
+	.ico-cog::before{
+		content:'\f013';
+		font-family: 'fontAwesome';
+		margin-right: 20px;
+		color: #222;
+		font-size: 1.2rem;
+	}
+	
+	.ico-heart::before{
+		content:'\f004';
+		font-family: 'fontAwesome';
+		margin-right: 20px;
+		color: #222;
+		font-size: 1.2rem;
+		
+	}
+	.ico-star::before{
+		content:'\f005';
+		font-family: 'fontAwesome';
+		margin-right: 20px;
+		color: #222;
+		font-size: 1.2rem;
+	}
+	.ico-phone::before{
+		content:'\f10b';
+		font-family: 'fontAwesome';
+		margin-right: 10px;
+		color: #222;
+		font-size: 2.5rem;
+	}
+	.card{
+		margin:20px 0;
+		width: auto;
+		border:solid 1px transparent;
+		box-shadow: 0 0 3px rgba(0,0,0,0.3);
+		display: none;
+	}
+	.card>p{
+		padding:16px;
+		text-align:left;
+	}
+	.card-display{
+		display: block;
+	}
+
+	
+
+
+	</style>
+	<h1 class="ico-phone">Design pour le mobile</h1>
+	
+	<div class="container">
+		<div class="inner-box-phone">
+			<h2 class="list-item">List item icon</h2>
+			<ul></ul>
+			<div class="card">
+				<p>Chargement en cours...</p>
+			</div>
+		</div>
+		
+	</div>
+	
+	<script type="text/javascript" src="js/app.js"></script>
+	
+</body>
+</html>
